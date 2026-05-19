@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>AI Classroom Dashboard</title>
+
+  <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+  <div class="sidebar">
+
+    <h1>EduAI</h1>
+
+    <ul>
+
+      <li onclick="goToPage('index.html')">
+        Dashboard
+      </li>
+
+      <li onclick="goToPage('exams.html')">
+        Exams
+      </li>
+
+      <li onclick="goToPage('attendance.html')">
+        Attendance
+      </li>
+
+      <li onclick="goToPage('assignments.html')">
+        Assignments
+      </li>
+
+      <li onclick="goToPage('analytics.html')">
+        Analytics
+      </li>
+
+    </ul>
+
+  </div>
+
+  <div class="main">
+
+    <div class="topbar">
+
+      <div>
+        <h2>AI Classroom Dashboard</h2>
+        <p>Smart Student Management System</p>
+      </div>
+
+      <button onclick="toggleTheme()">
+        Theme
+      </button>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="card"
+           onclick="goToPage('exams.html')">
+
+        <h2>Exam Dates</h2>
+
+        <p>
+          View all upcoming exams
+        </p>
+
+      </div>
+
+      <div class="card"
+           onclick="goToPage('attendance.html')">
+
+        <h2>Attendance</h2>
+
+        <p>
+          Track attendance reports
+        </p>
+
+      </div>
+
+      <div class="card"
+           onclick="goToPage('assignments.html')">
+
+        <h2>Assignments</h2>
+
+        <p>
+          Check pending homework
+        </p>
+
+      </div>
+
+
+      <div class="card"
+           onclick="goToPage('analytics.html')">
+
+        <h2>Analytics</h2>
+
+
+        <p>
+          Student performance stats
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+<h3 id="typing"></h3>
+
+<div class="ai-alert">
+
+  AI detected low performance
+  in Chemistry
+
+</div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
